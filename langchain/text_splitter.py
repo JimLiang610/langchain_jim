@@ -127,6 +127,7 @@ class TextSplitter(BaseDocumentTransformer, ABC):
         texts, metadatas = [], []
         for doc in documents:
             texts.append(doc.page_content)
+            #comment 
             metadatas.append(doc.metadata)
         return self.create_documents(texts, metadatas=metadatas)
 
